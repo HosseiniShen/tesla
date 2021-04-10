@@ -1,10 +1,11 @@
 import type { App } from 'vue'
 import { createRouter, createWebHistory } from 'vue-router'
 import { scrollBehavior } from './scrollBehavior'
+import { basicRoutes } from './routes'
 
 const router = createRouter({
   history: createWebHistory(),
-  routes: [],
+  routes: basicRoutes,
   strict: true, // 不允许在路由后面加 / 
   scrollBehavior,
 })
